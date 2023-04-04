@@ -1,2 +1,4 @@
-let btn = document.getElementById('start');
-btn.addEventListener("click", createGrid );
+const grid = document.querySelector("gridContainer");
+const userInput = document.getElementById("quantity");
+const resetButton = document.querySelector("reset");
+
