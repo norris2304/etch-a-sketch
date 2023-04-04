@@ -9,3 +9,23 @@ html {
 .left {
     display: inline-block;
 }
+
+.square {
+    background-color: white;
+    border: 1px solid black;
+}
+
+.color {
+    color: dimgray;
+    border: 1px solid black;
+}
+
+.gridContainer {
+    display: inline-grid;
+    grid-template-columns: repeat(16, 2fr);
+    grid-template-rows: repeat(16, 2fr);
+    border: 5px solid black;
+    border-radius: 5px;
+    height: 600px;
+    width: 600px;
+}
