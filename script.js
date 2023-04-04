@@ -16,23 +16,23 @@ updateGrid = () =>  {
     grid.innerHTML = "";
     grid.style.setProperty(
         "grid-template-columns",
-        `repeat(${userInput.value}, 2fr)`
+        `repeat(${userInput.value}, 1fr)`
     );
     grid.style.setProperty(
         "grid.template-rows",
-        `repeat(${userInput.value}, 2fr)`
+        `repeat(${userInput.value}, 1fr)`
     );
-    for (let i = 0; i < userInput.value * userInput.value; i++) {
+    for (let i = 0; i < (userInput.value * userInput.value); i++) {
         const div = document.createElement("div");
-        div.classList.remove("square");
+        div.classList.add("square");
         grid.appendChild(div);
     }
     console.log(userInput.value);
 }
 
 const square = document.querySelector("div");
-square.addEventListener("mouseover", function(e) {
-    e.target.classList.replace("square", "color");
+square.addEventListener("mouseover", function(event) {
+    event.target.classList.replace("square", "color");
 });
 
 userInput.addEventListener("change", updateGrid);
