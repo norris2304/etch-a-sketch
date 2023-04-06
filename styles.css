@@ -4,10 +4,16 @@ html {
 
 .right {
     float: right;
+    padding: 20px;
+    margin-right: 50px;
 }
 
 .left {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .square {
@@ -25,6 +31,7 @@ html {
     grid-template-columns: repeat(16, 2fr);
     border: 5px solid black;
     border-radius: 5px;
-    height: 600px;
-    width: 600px;
+    height: 50vw;
+    width: 50vw;
+    min-width: 0;
 }
