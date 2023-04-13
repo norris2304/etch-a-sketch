@@ -28,7 +28,6 @@ html {
 
 .gridContainer {
     display: inline-grid;
-    grid-template-columns: repeat(16, 2fr);
     border: 5px solid black;
     border-radius: 5px;
     height: 50vw;
